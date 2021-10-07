@@ -1,7 +1,9 @@
 # B1-SALAC
 
-## Projet SALAC BTS2
+## Equipe
 Maxime SIMON
+
 Maxime HEIM
-AXEL RENE
+
+Axel RENE
 
