@@ -12,7 +12,7 @@
 
 <table>
     <tr>
-        <th colspan="2"> Résidence "<?= $inf['name']; ?>"</th>
+        <th colspan="2">Résidence "<?= $inf['name']; ?>"</th>
     </tr>
     <tr>
         <td><img src="assets/img/Photos/<?= $inf['name']; ?>/<?= $inf['name']; ?>-Vue.jpg"></td>

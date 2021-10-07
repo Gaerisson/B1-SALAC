@@ -7,12 +7,15 @@ body {
 	/**** à rajouter pour ne pas avoir d'espace entre le bord de l'écran et les divisions ****/
 	margin: 0;
 	padding: 0;
+
+	display: flex;
+	font: 12px Verdana;
 }
 
 /*** les liens  ***/
 a:link {
 	color: #336666;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* lien non visité :  #336666 -  souligné */
@@ -28,6 +31,12 @@ a:hover {
 }
 
 /* quand on passe sur le lien : #990000 */
+
+.head_div {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
 
 /********** le titre, ses trois lettres et le logo *******************************/
 h1 {
@@ -56,34 +65,71 @@ img.imgLogo {
 /********** division : partie centrale *******************************/
 /** positionnement de la division "PartieCentrale"  **/
 div.PartieCentrale {
-	/* positionnement absolu a 26px du haut  161px de la gauche et 25 de la droite */
-	position: absolute;
-	top: 26px;
-	left: 161px;
-	right: 25px;
+	right: 0px;
+	width: 100%;
 	color: #444;
-	font: 12px Verdana;
 	padding: 10px;
+	padding-top: 4rem;
 	/* couleur_texte : #444 - lettre :  13px verdana - espacement_intérieur : 10px */
-	border: solid 3px #444;
-	/* bordure : continu 3px #444*/
-	border-radius: 1em;
-	/* arrondir les bords */
+
 }
 
 /********** division : les liens *************************************/
 /** positionnement de la division "lesLiens" **/
-div.LesLiens {
-	/** position: absolute; top: 80px; 	/* position : en absolu par rapport  au body et  à 80px du haut */
-	position: fixed;
-	top: 80px;
-	/* position : en fixe (ne bouge pas même si on utilise l'ascenceur */
-	width: 158px;
-	/* largeur de 158px */
-	font: 15px Verdana;
-	/* lettre 15px verdana */
-	border: solid 3px #444;
-	/* bordure continu 3px #444 */
+ul.LesLiens {
+	height: 100%;
+	/* position: fixed; */
+	border: 1px solid black;
+	border-width: 0 1px 0 0;
+}
+
+ul h3 {
+	padding: 10px;
+	margin: 0px;
+	background: #003355;
+	color: white;
+	text-align: center;
+}
+
+li {
+	/* background: #c7c7c7; */
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+.active {
+	background-color: #0033558c;
+    color: white;
+}
+
+.img_prev {
+	margin: 10px;
+}
+
+.img_prev div {
+	width: 10rem;
+	height: 10rem;
+	margin: 0;
+	box-shadow: 0 0 8px 8px #f1f1f1 inset;
+	background-size: cover;
 }
 
 /** on redonne une mise en forme aux liens (balise A) situés dans la division "LesLiens" **/
