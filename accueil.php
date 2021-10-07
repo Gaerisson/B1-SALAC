@@ -23,4 +23,3 @@ $num = $_GET["NumResidence"];
 echo $num;
 ?>
 </div>
-test
