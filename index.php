@@ -61,7 +61,7 @@
 	
 </head>
 <body>
-	<div class="LesLiens">
+	<div class="LesLiens" id="navbar">
 		<h3>Les résidences</h3>
 		<?php
 			foreach($pages as $pid => $inf){
@@ -85,7 +85,6 @@
 		?>
 	</div>
 	
-	<?php file_exists("pages/$page.php")?include("pages/$page.php"):print("Page $page not found !") ?>
-
-</body>
-</html>
+	<?php include_once 'pages/header.php'; ?>
+	<?php file_exists("pages/$page.php")?include("pages/$page.php"):Error(404,'Page non trouvé !'); ?>
+	<?php include_once 'pages/footer.php'; ?>

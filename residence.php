@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <title> Résidence "Coulomb"</title>	
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<LINK REL="Stylesheet" HREF ="FichierDeStyle.css" TYPE="text/css" />
+	<LINK REL="Stylesheet" HREF ="assets/css/FichierDeStyle.css" TYPE="text/css" />
 </head>
 <body>
 

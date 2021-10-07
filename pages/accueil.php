@@ -1,9 +1,3 @@
-<div class="PartieCentrale">
-	<h1> "SA LAC" : <span class="lettresRouges">L</span>ouez
-					votre <span class="lettresRouges">A</span>ppartement 
-					ou votre <span class="lettresRouges">C</span>hambre ! </h1> 
-	<img class="imgLogo" src="assets/Photos/Logo.jpg">
-	<hr>
 	<h2>Présentation de la société :</h2>
 	<p>La société "LAC" vous propose de louer votre appartement ou votre chambre-studio. Elle dispose de trois immeubles dont
 		deux constitués d'appartements et un autre composé de chambres aménagées.
@@ -14,10 +8,10 @@
 	</p>
 	<h2>Le fonctionnement :</h2>
 	<p>Il faut déposer un dossier
-		<a href="DossierInscription.pdf">(Téléchargez votre dossier)</a> auprès de notre société
+		<a href="assets/DossierInscription.pdf">(Téléchargez votre dossier)</a> auprès de notre société
 		<a href="index?page=coordonnees">(Coordonnées)</a> en précisant l'immeuble demandé et le type de l'appartement ou de la chambre voulu.
 	</p>
+	
 	<?php
 		isset($_GET["NumResidence"])?print($_GET["NumResidence"]):'';
 	?>
-</div>
