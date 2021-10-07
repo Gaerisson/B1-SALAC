@@ -1,9 +1,8 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <div class="PartieCentrale">
 	<h1> "SA LAC" : <span class="lettresRouges">L</span>ouez
 					votre <span class="lettresRouges">A</span>ppartement 
 					ou votre <span class="lettresRouges">C</span>hambre ! </h1> 
-	<img class="imgLogo" src="Photos/Logo.jpg">
+	<img class="imgLogo" src="assets/Photos/Logo.jpg">
 	<hr>
 	<h2>Présentation de la société :</h2>
 	<p>La société "LAC" vous propose de louer votre appartement ou votre chambre-studio. Elle dispose de trois immeubles dont
@@ -16,10 +15,9 @@
 	<h2>Le fonctionnement :</h2>
 	<p>Il faut déposer un dossier
 		<a href="DossierInscription.pdf">(Téléchargez votre dossier)</a> auprès de notre société
-		<a href="index.php?page=coordonnees">(Coordonnées)</a> en précisant l'immeuble demandé et le type de l'appartement ou de la chambre voulu.
+		<a href="index?page=coordonnees">(Coordonnées)</a> en précisant l'immeuble demandé et le type de l'appartement ou de la chambre voulu.
 	</p>
-<?php
-$num = $_GET["NumResidence"];
-echo $num;
-?>
+	<?php
+		isset($_GET["NumResidence"])?print($_GET["NumResidence"]):'';
+	?>
 </div>

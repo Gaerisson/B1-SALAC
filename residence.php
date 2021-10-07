@@ -1,19 +1,15 @@
 <pre>
 <?php
 
-$sql = "SELECT NumResidence AS num,
-Nomresidence AS nom,
-RueResidence AS rue,
-CPResidence AS cp,
-VilleResidence AS ville,
-UrlPhotoResidence AS url, 
-Ascenseuresidence AS ascenseur
-ParkingResidence AS parking,
-StandingResidence 
-FROM salac_intra
-where NumResidence = $numero;";
-$reponse=$bdd->query($sql);
-$infos = $reponse->fetch(PDO::FETCH_ASSOC);
+	$sql = "
+		SELECT NumResidence AS num, Nomresidence AS nom, RueResidence AS rue, CPResidence AS cp, VilleResidence AS ville,
+				UrlPhotoResidence AS url, Ascenseuresidence AS ascenseur,	ParkingResidence AS parking, StandingResidence 
+		FROM salac_intra
+		WHERE NumResidence = $numero;
+	";
+
+	$reponse=$bdd->query($sql);
+	$infos = $reponse->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
